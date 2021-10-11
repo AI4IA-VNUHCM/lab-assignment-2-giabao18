@@ -10,12 +10,27 @@ ______________________________________
 #include <stdlib.h>
 #include <math.h>
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
 	//testing variable, applying it to your algorithm for auto-evaluating
 	int testcase = atoi(argv[1]);
-	
+
 	//Your codes here
-	
-	
+	for (int i = 2; i <= testcase; i++)
+	{
+		int count = 0;
+		while (testcase % i == 0)
+		{
+
+			testcase /= i;
+			count++;
+		}
+		for (int j = 0; j < count; j++)
+		{
+			printf("%d", i);
+			if (testcase > i)
+				printf(" * ");
+		}
+	}
 	return 0;
 }

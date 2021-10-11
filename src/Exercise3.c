@@ -18,17 +18,11 @@ int main(int argc, char *argv[])
 	//Your codes here
 	for (int i = 2; i <= testcase; i++)
 	{
-		int count = 0;
 		while (testcase % i == 0)
 		{
-
 			testcase /= i;
-			count++;
-		}
-		for (int j = 0; j < count; j++)
-		{
 			printf(" %d", i);
-			if (testcase > i)
+			if (testcase >= i)
 				printf(" *");
 		}
 	}

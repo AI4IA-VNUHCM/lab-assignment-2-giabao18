@@ -27,9 +27,9 @@ int main(int argc, char *argv[])
 		}
 		for (int j = 0; j < count; j++)
 		{
-			printf("%d", i);
+			printf(" %d", i);
 			if (testcase > i)
-				printf(" * ");
+				printf(" *");
 		}
 	}
 	return 0;
